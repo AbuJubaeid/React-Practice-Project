@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Samsung",
+      "color": "black",
+      "price": 15000,
+      "category": "mobile",
+      "brand": "samsung",
+      "photo": "https://images.pexels.com/photos/214487/pexels-photo-214487.jpeg?cs=srgb&dl=pexels-john-tekeridis-214487.jpg&fm=jpg"
+    },
+    {
+      "id": 2,
+      "name": "Iphone",
+      "color": "black",
+      "price": 15000,
+      "category": "mobile",
+      "brand": "Iphone",
+      "photo": "https://images.unsplash.com/photo-1690705229380-a32a8eb5017d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aXBob25lJTIwMTMlMjBwcm8lMjBtYXh8ZW58MHx8MHx8fDA%3D"
+    },
+    {
+      "id": 3,
+      "name": "Pixel",
+      "color": "black",
+      "price": 15000,
+      "category": "mobile",
+      "brand": "Pixel",
+      "photo": "https://fdn.gsmarena.com/imgroot/static/headers/makers/google-2023-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Nokia",
+      "color": "black",
+      "price": 15000,
+      "category": "mobile",
+      "brand": "Nokia",
+      "photo": "https://www.shutterstock.com/image-photo/moscow-russia-september-2-2019-260nw-1613741032.jpg"
+    }
+  ]
+}
