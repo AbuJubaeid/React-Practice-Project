@@ -1,11 +1,9 @@
-import { product_Data } from "./constant"
+import { productdata } from "./constant"
 
 
-const productData =()=>{
-    return{
-        type:product_Data
-    }
-        
-    
+export const ProductData = () => {
+  return ({
+    type: productdata
+  }
+  )
 }
-export default productData
