@@ -1,13 +1,13 @@
-import { set_product } from "./constant";
+import { setdata } from "./constant"
 
 
-const productReducer=(data=[],action)=>{
-    switch(action.type){
-        case set_product:
-            return [...action.data]
-    default:
-        return data
-    }
+const ProductReducer = (data=[], action) => {
+  switch(action.type){
+    case setdata:
+       return [...action.data]
+  default:
+    return data
+  }
+
 }
-
-export default productReducer
+export default ProductReducer
