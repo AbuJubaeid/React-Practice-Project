@@ -7,6 +7,98 @@
   pointer-events: none;
 }
 
+/* Header Start*/
+.header {
+  background-color: purple;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  color: white;
+}
+.headerCart {
+  background: rgb(144, 144, 239);
+  /* height: 50px;
+  width: 80px;
+  margin: 20px; */
+  padding: 0px 20px;
+}
+
+.headerCart a h3 {
+  margin-top: -20px;
+}
+.headerCart a:link {
+  text-decoration: none;
+}
+
+.headerCart a:hover {
+  text-decoration: underline;
+}
+
+.headerCart p {
+  margin-left: 15px;
+}
+/* Header End */
+
+/* main start */
+
+.main .main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.main-data img {
+  height: 250px;
+  width: 250px;
+}
+
+.main-data {
+  border: 2px solid black;
+}
+.main-text {
+  text-align: center;
+}
+
+.main-data button {
+  margin-left: 25%;
+  background: rgb(100, 169, 243);
+}
+
+.main-data .add-button {
+  margin-left: 28px;
+}
+/* main end */
+
+/* cart style start */
+.cartdata table {
+  flex: 65%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 35%;
+}
+.cartdata table td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+.cartdata button {
+  margin-left: 40%;
+  background: rgb(100, 169, 243);
+}
+
+.cartdata .empty {
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.cartdata a:link {
+  text-decoration: none;
+}
+
+.cartdata a:hover {
+  text-decoration: underline;
+}
+
+/* cart style end */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,9 +127,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-img {
-  width: 120px;
-  height: 50px;
 }
