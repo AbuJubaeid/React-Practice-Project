@@ -1,35 +1,40 @@
-import { useSelector } from "react-redux"
-import { Link } from "react-router-dom"
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { EmptyCart } from "../redux/action";
 
-
-const Cart =()=>{
-    const data = useSelector((state)=>state.cartReducer)
-
-
-    return(
+const Cart = () => {
+  const data = useSelector((state) => state.CartReducer);
+  const dispatch = useDispatch()
+  return (
+    <div className="cartdata">
+        <button className="empty" onClick={() => dispatch(EmptyCart(data))}>
+        Empty_Cart
+      </button>
+        <Link to="/">Go Back To Home</Link>
         <div>
-            <h1>Cart Product</h1>
-            <Link to='/'>Back to Home Page</Link>
-            <table>
-                <tr>
-                    <td>Name</td>
-                    <td>Color</td>
-                    <td>Price</td>
-                    <td>Brand</td>
-                    <td>Category</td>
-                </tr>
-                {
-                    data.map((item)=>
-                    <tr key={item.key}>
-                        <td>{item.name}</td>
-                        <td>{item.color}</td>
-                        <td>{item.price}</td>
-                        <td>{item.brand}</td>
-                        <td>{item.category}</td>
-                    </tr>)
-                }
-            </table>
-        </div>
-    )
-}
-export default Cart
+      <table>
+        <tr>
+          <td>Name</td>
+          <td>Price</td>
+          <td>Category</td>
+          <td>Color</td>
+          <td>Brand</td>
+        </tr>
+        {data.map((item) => (
+          <tr className="image" key={item.id}>
+            <td>{item.name}</td>
+            <td>{item.price}</td>
+            <td>{item.category}</td>
+            <td>{item.color}</td>
+            <td>{item.brand}</td>
+          </tr>
+        ))}
+      </table>
+    </div>
+    </div>
+    
+  );
+};
+
+export default Cart;
