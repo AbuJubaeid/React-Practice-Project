@@ -1,15 +1,21 @@
-import { add_to_cart, remove_from_cart } from "./constant"
+import { addtocart, emptycart, removefromcart } from "./constant"
 
-const cartReducer=(data=[], action)=>{
-    
-        switch(action.type){
-            case add_to_cart:
-                return [action.data, ...data]
-            case remove_from_cart:
-                const remainingItems= data.filter((item)=>item.id!==action.data)
-                return [...remainingItems]
-        default:
-                return data
-        }
+
+const CartReducer = (data=[], action) => {
+  switch(action.type){
+        case addtocart:
+        return [action.data, ...data]
+
+        case removefromcart:
+            const remainingItem = data.filter((item)=>item.id !==action.data)
+        return [...remainingItem]
+
+        case emptycart:
+            data = []
+        return [...data]
+  default:
+    return data
+  }
 }
-export default cartReducer
+
+export default CartReducer
