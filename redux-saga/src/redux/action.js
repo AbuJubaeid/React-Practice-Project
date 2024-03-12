@@ -1,17 +1,23 @@
-import { add_to_cart, remove_from_cart } from "./constant"
+import { addtocart, emptycart, removefromcart } from './constant'
 
-export function addToCart (data){
-    return ({
-        type: add_to_cart,
-        data
-    }   
-    )
+export const AddToCart = (data) => {
+  return ({
+    type: addtocart,
+    data
+  }
+  )
 }
-
-export function removeFromCart (data){
+export const RemoveFromCart = (data) => {
     return ({
-        type: remove_from_cart,
-        data
-    }   
+      type: removefromcart,
+      data
+    }
     )
-}
+  }
+  export const EmptyCart = (data) => {
+    return ({
+      type: emptycart,
+      data
+    }
+    )
+  }
